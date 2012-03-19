@@ -1,0 +1,12 @@
+Create repo in github:
+
+First, create repo from account, then
+
+mkdir local_repo_folder
+cd local_repo_folder
+git init
+touch README
+git add README
+git commit -m 'first commit'
+git remote add origin git@github.com:username/repo_name.git
+git push -u origin master

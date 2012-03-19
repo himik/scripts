@@ -1,0 +1,27 @@
+http://help.github.com/win-set-up-git/
+
+Set up SSH keys:
+
+if have key go 4
+1. 
+$ cd ~/.ssh
+If exists go 2, otherwise go 3
+2. 
+$ ls
+config	id_rsa	id_rsa.pub	known_hosts
+$ mkdir key_backup
+$ cp id_rsa* key_backup
+$ rm id_rsa*
+3. 
+$ ssh-keygen -t rsa -C "your_email@youremail.com"
+4. Add keys to GitHub
+5. To test
+$ ssh -T git@github.com
+
+Set up info:
+$ git config --global user.name "Firstname Lastname"
+$ git config --global user.email "your_email@youremail.com"
+
+Set up GitHub token 
+$ git config --global github.user username
+$ git config --global github.token 0123456789yourf0123456789token (token from GitHub account)
